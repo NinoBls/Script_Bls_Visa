@@ -11,6 +11,7 @@
 //Ù„Ø§ ØªÙ†Ø³Ù‰ Ù…ØªØ§Ø¨Ø¹Ø© Ù„Ù‚Ù†Ø§ØªÙŠ
 //https://www.youtube.com/@nature_dz
 //================================================================
+ var AppointmentTime = "11:30 - 11:45";        // Appointment Time
  var lastNames ="Abouamama";                // LEST NAME
  var firstNames ="Benslimane";              //FURST NEME
  var births ="1986-04-18";                  //Date Of Birth
@@ -19,6 +20,7 @@
  var expiryDates ="2024-04-21";             //Passport Expiry Date
  var pptissuePalaces ="NAAMA";          //Passport Issue Place
  //================================================================
+ $('#app_time').val(AppointmentTime);
  $('#first_name').val(firstNames);
  $('#last_name').val(lastNames);
  $('#dateOfBirth').datepicker("update" ,births);
@@ -68,7 +70,7 @@
     }
     if($("#app_date").val().length === 0)
         {
-            setTimeout(function(){window.location.reload(1);}, 80* 1000);;
+            setTimeout(function(){window.location.reload(1);}, 5* 1000);;
         }
 }
  //   ----------------------------------------------------------------------------------------------------
